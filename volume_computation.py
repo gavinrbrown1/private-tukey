@@ -156,8 +156,6 @@ def exact_polytope_volume(A, b):
         hull = ConvexHull(vertices, qhull_options='FS')
         volume = hull.volume
     else:
-        sys.path.append('./vinci-1.0.5')
-
         # using VINCI code, and Lasserre's algorithm
         b = b.reshape(-1, 1)  # Reshape b to be a column vector
         data = np.hstack([b, -A])
@@ -184,6 +182,7 @@ def exact_polytope_volume(A, b):
 
 def vinci_subprocess():
     """wrapper to call the vinci subprocess"""
+    sys.path.append('./vinci-1.0.5')
     command = ['./vinci-1.0.5/vinci', "polytope", "-m", "rlass"]  
 
     # Running the command
