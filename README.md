@@ -2,7 +2,7 @@
 
 This repository contains code accompanying the paper "Tukey Depth Mechanisms for Practical Private Mean Estimation," 
 by Gavin Brown and Lydia Zakynthinou.
-As the title suggests, it provides algorithms for differentially private mean estimation that use notions of Tukey depth.
+It provides algorithms for differentially private mean estimation that use notions of Tukey depth.
 In addition to providing privacy, these algorithms are accurate at small sample sizes, robust to misspecification or adversarial corruption, and invariant under affine rescalings of the data.
 Their computational requirements scale poorly with the dimension, so they are best applied to datasets of modest dimension (e.g., <=5).
 
