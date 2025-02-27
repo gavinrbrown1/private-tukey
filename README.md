@@ -1,6 +1,6 @@
 ### Introduction
 
-This repository contains code accompanying the paper "Tukey Depth Mechanisms for Practical Private Mean Estimation," 
+This repository contains code accompanying the paper ["Tukey Depth Mechanisms for Practical Private Mean Estimation,"](https://arxiv.org/abs/2502.18698) 
 by Gavin Brown and Lydia Zakynthinou.
 It provides algorithms for differentially private mean estimation that use notions of Tukey depth.
 In addition to providing privacy, these algorithms are accurate at small sample sizes, robust to misspecification or adversarial corruption, and invariant under affine rescalings of the data.
